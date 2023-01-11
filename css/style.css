@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+#myModal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+#modalContent {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+
+.img-responsive {
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
+    width: 100%;
+    background-color: #fff;
+}
+aside {
+    min-height: 100vh;
+}
+
+.nav-pills 
+.nav-link.active, 
+.nav-pills .show>
+.nav-link {
+    background-color: #C2185B;
+}
+
+.btn-primary{
+    background-color: #C2185B;
+    border-color: #C2185B;
+}
+
+main.login {
+    width: 400px;
+}
+
+section.full{
+    width: 100%;
+    min-height: 80vh;
+    padding: 50px 0;
+}
+
+.container-img {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+    overflow: hidden;
+    margin: 0 auto;
+    width: 50%;
+    height: 50vh;
+}
+
+#para-mobile {
+    display:none;
+}
+
+
+article.evento {
+    width: 350px;
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+}
+
+footer nav ul li  {
+    padding: 10px;
+}
+
+/* --- Responsividade laptop --- */
+@media all and (max-width: 1024px) {
+    #para-mobile {
+        display:none;
+    }
+}
+
+/* --- Responsividade tablet --- */
+@media all and (max-width: 768px) {
+
+    #sobre{
+    flex:none;
+    }
+    #bloco-inicio
+    {
+        flex-wrap: wrap;
+    }
+   
+    .table {
+        width: 550px;
+    }
+
+    #para-mobile {
+        display:none;
+    }
+}
+
+/* --- Responsividade celular ---*/
+@media all and (max-width: 425px) {
+
+    #bloco-inicio
+    {
+        flex-wrap: wrap;
+    }
+
+    #img-inicio {
+        max-width: 400px;
+    }
+
+    #lateral{
+        display:none!important;
+    }
+
+    #para-mobile {
+        display:inline-block;
+    }
+
+    #main {
+        padding: 3px!important;
+    }
+
+    .nav-link.active {
+        width: 120px!important;
+    }
+
+    .text-center {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #titulo-admin {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .img-responsive {
+        max-width: 60%;
+    }
+
+ .mb-3 {
+     box-sizing: initial!important;
+    }
+
+
+ .bd-example {
+     overflow:scroll;
+    }
+
+ .img-responsive {
+     display: block;
+     margin: 0 auto;
+    }
+
+ #ul-menu {
+     text-align:center;
+
+    }
+
+ .nav-link.active {
+     margin: 0 auto;
+    }
+
+ #botao-evento {
+     display: block;
+     margin: 0 auto;
+     width: 40%;
+    }
+}
+
+
